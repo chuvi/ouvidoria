@@ -1,0 +1,14 @@
+<%= render :partial => 'shared/menu' %>
+
+<%= link_to "Adicionar novo destino de demandas", new_destino_path %>
+
+<h4>Destinos Cadastrados</h4>
+
+<%= flash[:message] %>
+
+<% for destino in @destinos %>
+  <%= destino.nome %>
+  <span class='link_edit'><%= link_to "editar destino", edit_destino_path(destino) %>
+  <span class='link_delete'><%= link_to "excluir usuário", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete %>
+  <br/>
+<% end %>

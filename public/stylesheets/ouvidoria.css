@@ -1,0 +1,12 @@
+body{margin:0;font-family: Arial}
+#banner{height: 50px;padding: 10px 0px;font:30px Arial}
+#wrap{padding-left: 20px;}
+#rodape{height:50px;margin-top:100px}
+#menu ul {padding:0px;margin:0px;float: left;width: 100%;background-color:#EDEDED;list-style:none;}
+#menu ul li { display: inline; }
+#menu ul li a {padding: 2px 10px;float:left;background-color:#EDEDED;color: #333;text-decoration: none;border-bottom:3px solid #EDEDED;}
+.warning, .notice, .error{padding:5px;border: 1px solid #CCC}
+.warning{}
+.notice{}
+.error{}
+.selected{background-color:blue;}

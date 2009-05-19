@@ -1,0 +1,8 @@
+<%= render :partial => 'shared/menu' %>
+<h4>Edição de Destino</h4>
+
+<% form_for @destino do |f| %>  
+  <%= error_messages_for :destino %>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+  <%= submit_tag  'Alterar', :disable_with => 'Aguarde'%>  
+<% end %>
