@@ -1,0 +1,15 @@
+Olá,
+
+Bem vindo às notas de instalação do sistema Ouvidoria, desenvolvido por Marcia Almeida, gestora de TI da Câmara Municipal de Porto Alegre.
+
+Passos para instalação:
+
+- instalação do ambiente.  Depende do sistema Operacional. O básico é Ruby, Rails e o servidor HTTP. Links úteis:
+	- xx
+	- xx
+- configurar acesso a dados em database.yml (não esquecer de instalar o adapter correto)
+- executar os seguintes comandos:
+	- rake db:create (criação do banco conforme definido em database.yml
+	- rake db:schema:load (criação das tabelas, conforme definido em db/schema.rb)
+	
+Observações: 	
