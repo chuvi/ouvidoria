@@ -1,16 +1,18 @@
-==============================
-INSTALAÇÃO
-==============================
+== Instalação do ambiente
 
-- instalação do ambiente.  Depende do sistema Operacional. O básico é Ruby, Rails e o servidor HTTP. Links úteis:
-	- xx
-	- xx
-- configurar acesso a dados em database.yml (não esquecer de instalar o adapter correto)
-- executar os seguintes comandos:
+No Windows
+Para aplicações intranet, eu utilizo Windows 2003 server + ruby 1.8.26 + rails 2.3.2 + mongrel.
+Em aplicações extranet, eu utilizo todas as ferramentas acima mais o Apache para fazer proxy até a máquina local.
+Como o ambiente pode variar muito, não indicarei nenhum tutorial. Acho melhor me enviar e-mail que ajudo a verificar o que é necessário para funcionar no ambiente Windows.
+
+No Linux
+Há milhares de tutoriais na web. Procure aqueles que informam também como utilizar o Passenger.
+
+== Instalação da aplicação
+É necessário efetuar download/clone da aplicação e configurar o acesso a dados  em database.yml (não esquecer de instalar o adapter correto). A seguir, executar os seguintes comandos:
 	- rake db:create (criação do banco conforme definido em database.yml
 	- rake db:schema:load (criação das tabelas, conforme definido em db/schema.rb)
 	
-==============================
-OBSERVAÇÕES
-==============================
+Ainda há várias observações que não postei aqui, pela absoluta falta de tempo. mas enviem e-mail que respondo a todos.
 
+Marcia Almeida
