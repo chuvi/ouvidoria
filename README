@@ -1,21 +1,35 @@
 ESTE ARQUIVO ESTÁ SENDO ALTERADO NESTE MOMENTO
 ==
 
-== Instalação do ambiente
+Instalação do ambiente
+==
+No Windows XP
 
-No Windows
-Para aplicações intranet, eu utilizo Windows 2003 server + ruby 1.8.26 + rails 2.3.2 + mongrel.
-Em aplicações extranet, eu utilizo todas as ferramentas acima mais o Apache para fazer proxy até a máquina local.
-Como o ambiente pode variar muito, não indicarei nenhum tutorial. Acho melhor me enviar e-mail que ajudo a verificar o que é necessário para funcionar no ambiente Windows.
+- Instalação do Ruby (Final release - 1.8.6.26)
+  - download do windows installer em http://rubyonrails.org/download
+  - instalação do executável (eu geralmente instalo no c:/ ruby, seguindo todas as recomendações do instalador)
+- Instalação do Rails
+  - abrir prompt e digitar o comando "gem istall rails". Se houver um proxy, deve ser configurada a variável de ambiente HTTP_PROXY; caso contrário, a instalação não será bem sucedida. Exemplo de configuração: "HTTP_PROXY=http://myproxy.com.br:5678"
+  - a instalação do Rails é sempre lenta no Windows, podendo não ser possível de forma alguma em máquinas que não possuam no mínimo 500Mb de RAM
+  - ao ser perguntado pela confirmação de instalação de dependencias, responda Y a todas, ou seja, instale todas as dependências
+- Instalação do banco de dados Mysql
+  - efetuar download no site do MySql (dev.mysql.com). A última ul de onde baixei foi http://dev.mysql.com/get/Downloads/MySQL-5.1/mysql-essential-5.1.34-win32.msi/from/pick#mirrors
+  - instalar o mysql, preferencialmente versão completa. Não esqueça de marcar a opção "Configure MysqlServer now" 
+  - continuar no wizard de configuração, selecionando "Detailed Configuration", logo a seguir "Server Machine","Multifunctional Database". Geralmente, eu sigo a recomendação do wizard em relação ao path de instalação
+  - na tela de número de configuração de conexão, eu utilio "Online Transactin Processing (OLTP)". Escolha a opção que melhor se adapta ao perfil de utlzação do banco em sua instituição
+  - na tela de opções de rede, mantenha as configurações recomendadadas;
+  - na tela de configuração de caracteres, selecione a opção "Best Suppport for Multilingualism"
+  - instale como serviço, se desejar. É mais fácil de manter o serviço sempre "up"
+  - na tela das configurações de segurança, digite uma nova senha para o usuário root, por questões de segurança. O usuário padrão (default) será "root". habilite o check box "Enable root access from remote machine"
+  - execute. Caso apareça alguma mensagem de erro, feche as janelas, execute o instalador novamente, selecionado a opção "Repair". Verifique se o serviço está rodando (services.msc no prompt)
 
-No Linux
-Há milhares de tutoriais na web. Procure aqueles que informam também como utilizar o Passenger.
+Instalação da Aplicação
+==
+A aplicação pode ser obtida de pelo menos duas formas: via git clone (se você não conhece git, é hora de conhecer) ou por download do Github, aqui mesmo onde você está. Uma vez em sua máquina, é necessário configurar o acesso ao banco de dados. Vários bancos podem ser utilizados, entre eles MySQl, PostgreSQL, Sql Server e DB2. 
 
-== Instalação da aplicação
-É necessário efetuar download/clone da aplicação e configurar o acesso a dados  em database.yml (não esquecer de instalar o adapter correto). A seguir, executar os seguintes comandos:
-	- rake db:create (criação do banco conforme definido em database.yml
-	- rake db:schema:load (criação das tabelas, conforme definido em db/schema.rb)
-	
-Ainda há várias observações que não postei aqui, pela absoluta falta de tempo. mas enviem e-mail que respondo a todos.
+- Instalação de adapter e configuração da aplicação
+  - na aplicação, abra o arquivo config/database.yml e altere username, password e host, conforme necessário. Não esqueça que é necessário instalar o adapter correto de seu banco. No caso do MySQl, abra novamente o prompt e digite o comando "gem install mysql". Selecione a oplção adeuqada; no meu caso, 1 (mysql 2.7.3 (mswin32). Se você obtiver a mensagem "Successfully installed mysql-xxx, a instalação foi bem sucedida; outras eventuais mensagens de erro podem ser ignoradas
+  - é necessário, ainda, disponibilizar a dll do MySQL para que o ruby a conheça. Localize o arquivo libmySQl.dll em sua instalação do MySQL (geralmente em "<unidade>:\<local de instalação do mysql>\bin"). Copie para "<unidade>:\<local de instalação do ruby>\bin"
 
-Marcia Almeida
+- Criação da base de dados
+  - em breve
