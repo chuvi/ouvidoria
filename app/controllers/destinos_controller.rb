@@ -3,6 +3,7 @@ class DestinosController < ApplicationController
   include ApplicationHelper
   
   def index
+    @menu = "destinos"
     @destinos = Destino.all(:order => :nome)
   end
   

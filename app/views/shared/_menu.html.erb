@@ -1,7 +1,5 @@
-<div id='menu'>
-  <ul>
-    <li id='usuarios'><%= link_to "Usuários", users_path %></li>
-    <li id='demandas'><%= link_to "Demandas", demandas_path %></li>
-    <li id='demandas'><%= link_to "Destinos", destinos_path %></li>
-  </ul>  
+<div id='menu'>  
+  <%= link_to "Demandas", demandas_path, @menu == "demandas" ? {:class => "selected"} : nil %>
+  <%= link_to "Destinos", destinos_path, @menu == "destinos" ? {:class => "selected"} : nil %>
+  <%= link_to "Usuários", users_path, @menu == "usuarios" ? {:class => "selected"} : nil %>
 </div>  

@@ -23,7 +23,8 @@ namespace :db do
   	Rake::Task['db:create'].invoke  	
   	puts "  -  criando tabelas..."
   	puts ""
-  	Rake::Task['db:schema:load'].invoke
+  	#Rake::Task['db:schema:load'].invoke
+  	Rake::Task['db:migrate'].invoke
   	puts ""
   	puts "  - setup de banco executado com sucesso"
   	puts ""

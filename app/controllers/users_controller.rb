@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   include ApplicationHelper
   
   def index
+    @menu = "usuarios"
     @users = User.all(:order => :name)
   end
   

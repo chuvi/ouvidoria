@@ -107,13 +107,14 @@ pt-BR:
     attributes:
       user:         
         name: "Nome"
-        password: "Senha"      
+        password: "Senha"  
+            
     errors:
       template:
         header:
           one: "{{model}} não pôde ser salvo: 1 erro"
           other: "{{model}} não pôde ser salvo: {{count}} erros."
-        body: "Por favor, cheque os seguintes campos:"
+        body: "Por favor, verifique os seguintes campos:"
       messages:
         inclusion: "não está incluso na lista"
         exclusion: "não está disponível"

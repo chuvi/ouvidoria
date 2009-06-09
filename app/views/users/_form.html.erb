@@ -1,5 +1,5 @@
-<p>Nome<%= f.text_field :name %></p>
-<p>E-mail<%= f.text_field :email %></p>  
-<p>Login<%= f.text_field :login %></p>
-<p>Senha<%= f.password_field :password %></p>
-<p>Confirmação de senha <%= f.password_field :password_confirmation %> </p>
+<p><%= f.label :nome %><br/><%= f.text_field :name %></p>
+<p><%= f.label :email%><br/><%= f.text_field :email %></p>  
+<p><%= f.label :login %><br/><%= f.text_field :login %></p>
+<p><%= f.label :senha %><br/><%= f.password_field :password %></p>
+<p><%= f.label 'Confirmação de senha' %><br/><%= f.password_field :password_confirmation %> </p>

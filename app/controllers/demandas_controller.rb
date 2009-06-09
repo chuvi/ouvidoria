@@ -1,6 +1,8 @@
 class DemandasController < ApplicationController
   
+  
   def index
+    @menu = "demandas"
   end
   
   def new
