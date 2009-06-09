@@ -4,9 +4,20 @@
   </head>
   <body>
     <div id='banner'>
+      <div class="account">
+        <%= image_tag "no_photo.jpeg" %>
+        <div class="name">
+          Fulano de Tal
+          <%= link_to "[Logout]" %>
+        </div>
+      </div>
       <br/>
       <h1>Ouvidoria</h1>
-      <%= render :partial => 'shared/menu' %>      
+      <div id='menu'>  
+        <%= link_to "Demandas", demandas_path, @menu == "demandas" ? {:class => "selected"} : nil %>
+        <%= link_to "Destinos", destinos_path, @menu == "destinos" ? {:class => "selected"} : nil %>
+        <%= link_to "Usuários", users_path, @menu == "usuarios" ? {:class => "selected"} : nil %>
+      </div>    
     </div>        
     
     <div id='content'>

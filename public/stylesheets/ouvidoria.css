@@ -20,6 +20,11 @@ textarea { font-size:14px; }
 #banner #menu { font-size:12px; text-transform:uppercase; }
 #banner #menu a { text-decoration:none; padding:11px 15px; color:#ffffff; font-weight:bold; }
 #banner #menu a.selected { color:#183048; background-color:#ffffff;  }
+#banner .account { float:right; background-color:#244058; padding:6px; width:250px; margin:15px; color:#ffffff }
+#banner .account img { float:left; border:2px solid #485588;}
+#banner .account .name { margin-top:40px; width:245px; text-align:right; }
+#banner .account a { color:#686fb8 }
+#banner .account a:hover { color:#ffffff }
 
 
 /* =================================== */
