@@ -25,7 +25,7 @@ Instalação da Aplicação
 A aplicação pode ser obtida de pelo menos duas formas: via git clone (se você não conhece git, é hora de conhecer) ou por download do Github, aqui mesmo onde você está. Uma vez em sua máquina, é necessário configurar o acesso ao banco de dados. Vários bancos podem ser utilizados, entre eles MySQl, PostgreSQL, Sql Server e DB2. 
 
 - Instalação de adapter e configuração da aplicação
-  - na aplicação, abra o arquivo config/database.yml e altere username, password e host, conforme necessário. Não esqueça que é necessário instalar o adapter correto de seu banco. No caso do MySQl, abra novamente o prompt e digite o comando "gem install mysql". Selecione a opção adequada; no meu caso, 1 (mysql 2.7.3 (mswin32). Se você obtiver a mensagem "Successfully installed mysql-xxx, a instalação foi bem sucedida; outras eventuais mensagens de erro podem ser ignoradas
+  - na aplicação, renomeie o arquivo config/database_mysql.yml para config/database.yml e altere username, password e host, conforme necessário. Não esqueça que é necessário instalar o adapter correto de seu banco. No caso do MySQl, abra novamente o prompt e digite o comando "gem install mysql". Selecione a opção adequada; no meu caso, 1 (mysql 2.7.3 (mswin32). Se você obtiver a mensagem "Successfully installed mysql-xxx, a instalação foi bem sucedida; outras eventuais mensagens de erro podem ser ignoradas
   - é necessário, ainda, disponibilizar a dll do MySQL para que o ruby a conheça. Efetue download da dll em http://www.marciaalmeida.blog.br/wp-content/uploads/2009/05/libmysql.dll. Copie para "<unidade>:\<local de instalação do ruby>\bin"
 
 - Criação da base de dados
