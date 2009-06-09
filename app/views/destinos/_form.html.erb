@@ -1,3 +1,4 @@
 <p><%= f.label :nome %><br/><%= f.text_field :nome %></p>
+<p><%= f.label :tipo %><br/><%= f.select :tipo, Destino::TIPOS, :include_blank => true %></p>
 <p><%= f.label :email %><br/><%= f.text_field :email %></p>  
 <p><%= f.label :status %><br/><%= f.radio_button :status, :ativo%>Ativo<%= f.radio_button :status , :inativo %>Inativo</p>
