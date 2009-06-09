@@ -4,4 +4,5 @@
   <%= error_messages_for :destino %>
   <%= render :partial => 'form', :locals => {:f => f} %>
   <%= submit_tag  'Alterar', :disable_with => 'Aguarde'%>  
+  <%= link_to "Cancelar", :action => "index" %>
 <% end %>

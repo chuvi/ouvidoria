@@ -11607,3 +11607,1225 @@ Rendering destinos/new
 Rendered destinos/_form (0.0ms)
 Rendered shared/_menu (0.0ms)
 Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:15) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:16) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:29:16) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:17) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:29:18) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 109ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:18) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:29:19) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:19) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:29:21) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:22) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:43) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:29:48) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:53) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:29:55) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:29:56) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:29:57) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:29:57) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:30:13) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:30:15) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:30:16) [GET]
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:30:20) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:30:22) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:30:27) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:30:27) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:30:28) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:30:31) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:31:10) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:34:10) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:34:44) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-08 22:34:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/cross_solid.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:34:46) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:34:47) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:34:47) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:34:48) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:34:51) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:34:52) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:08) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:35:08) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:35:09) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:35:10) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:11) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:35:11) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:35:12) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:27) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:27) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:28) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:35:28) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:29) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:46) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:47) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:35:48) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:35:49) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:35:49) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-08 22:35:50) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-08 22:35:53) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"Adicionar"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY '') LIMIT 1[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 141ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:35:57) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:36:45) [GET]
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:37:19) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:37:26) [GET]
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+
+ActionView::TemplateError (undefined method `capitalize' for [:parlamentar, :setor, :pessoa]:Array) on line #2 of app/views/destinos/_form.html.erb:
+1: <p><%= f.label :nome %><br/><%= f.text_field :nome %></p>
+2: <p><%= f.label :tipo %><br/><%= f.select :tipo, Destino::TIPOS.capitalize %></p>
+3: <p><%= f.label :email %><br/><%= f.text_field :email %></p>  
+4: <p><%= f.label :status %><br/><%= f.radio_button :status, :ativo%>Ativo<%= f.radio_button :status , :inativo %>Inativo</p>
+
+    app/views/destinos/_form.html.erb:2
+    app/views/destinos/new.html.erb:5
+    app/views/destinos/new.html.erb:3
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (312.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:37:39) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (15.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:37:49) [GET]
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:37:58) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+
+ActionView::TemplateError (undefined method `<=>' for :parlamentar:Symbol) on line #2 of app/views/destinos/_form.html.erb:
+1: <p><%= f.label :nome %><br/><%= f.text_field :nome %></p>
+2: <p><%= f.label :tipo %><br/><%= f.select :tipo, Destino::TIPOS.sort, :include_blank => true %></p>
+3: <p><%= f.label :email %><br/><%= f.text_field :email %></p>  
+4: <p><%= f.label :status %><br/><%= f.radio_button :status, :ativo%>Ativo<%= f.radio_button :status , :inativo %>Inativo</p>
+
+    app/views/destinos/_form.html.erb:2:in `sort'
+    app/views/destinos/_form.html.erb:2
+    app/views/destinos/new.html.erb:5
+    app/views/destinos/new.html.erb:3
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:38:19) [GET]
+
+NoMethodError (undefined method `<=>' for :parlamentar:Symbol):
+  app/models/destino.rb:6:in `sort'
+  app/models/destino.rb:6
+  app/controllers/destinos_controller.rb:12:in `new'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (171.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:38:54) [GET]
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 172ms (View: 125, DB: 16) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:39:05) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:39:10) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:39:34) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-06-08 22:42:55) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Rendered shared/_menu (16.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:42:56) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:42:58) [GET]
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:42:59) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:43:41) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:43:45) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:43:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-08 22:43:51) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"teste", "tipo"=>"", "email"=>"te@rgr.ju"}}
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/destinos/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-08 22:43:55) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"teste", "tipo"=>"Setor", "email"=>"te@rgr.ju"}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Update (16.0ms)[0m   [0mUPDATE `destinos` SET `tipo` = 'Setor', `updated_at` = '2009-06-09 01:43:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 78ms (DB: 16) | 302 Found [http://localhost/destinos/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:43:55) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:43:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-08 22:44:15) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"teste", "tipo"=>"Setor", "email"=>"te@rgr.ju"}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/destinos/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:44:15) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:44:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:44:36) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:44:37) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:44:51) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"ativo", "nome"=>"Casa da sogra", "tipo"=>"Parlamentar", "email"=>"teste@frgr.nt"}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDestino Create (0.0ms)[0m   [0;1mINSERT INTO `destinos` (`status`, `updated_at`, `nome`, `created_by`, `updated_by`, `tipo`, `email`, `created_at`) VALUES('ativo', '2009-06-09 01:44:51', 'Casa da sogra', NULL, NULL, 'Parlamentar', 'teste@frgr.nt', '2009-06-09 01:44:51')[0m
+  [4;35;1mSQL (16.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 31ms (DB: 16) | 302 Found [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:44:51) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:44:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (15.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:45:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (15.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-08 22:45:07) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"teste", "tipo"=>"Parlamentar", "email"=>"te@rgr.ju"}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Update (0.0ms)[0m   [0mUPDATE `destinos` SET `tipo` = 'Parlamentar', `updated_at` = '2009-06-09 01:45:07' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/destinos/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:45:07) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:45:08) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (16.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/2/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:45:27) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:45:27) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 47ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:45:28) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:45:28) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-08 22:46:06) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-08 22:46:07) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"Adicionar"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY '') LIMIT 1[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 46ms (View: 15, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:46:10) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-08 22:46:12) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:46:13) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:46:17) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"Parlamentar", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:46:20) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"Funcionario", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:46:24) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"Setor", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (16.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 94ms (View: 31, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:46:27) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"Funcionario", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 110ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:48:16) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"Funcionario", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-08 22:48:22) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-08 22:48:28) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Rendered shared/_menu (0.0ms)
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:48:29) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-08 22:48:29) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-08 22:48:31) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendered shared/_menu (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:48:34) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/2/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m

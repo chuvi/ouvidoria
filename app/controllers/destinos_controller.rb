@@ -8,6 +8,7 @@ class DestinosController < ApplicationController
   end
   
   def new
+    @menu = "destinos"
     @destino = Destino.new
   end
   
@@ -16,14 +17,14 @@ class DestinosController < ApplicationController
     if @destino.save
       flash[:message] = notice_message 'Destino cadastrado com sucesso'
       redirect_to destinos_path
-    else
-      flash[:message] = error_message 'Problemas no cadastro do destino'
+    else      
       render :action => :new
     end
     
   end
   
   def edit
+    @menu = "destinos"
     @destino = Destino.find(params[:id])
   end
   
