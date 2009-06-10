@@ -8,7 +8,11 @@ h1{color:white}
 a, a:visited { color: #3333bb; }
 input[type=text] { font-size:14px; }
 textarea { font-size:14px; }
-
+#rodape{height:50px;margin-top:100px}
+#busca{padding:10px}
+.new{background: url(/images/add.png);background-repeat:no-repeat;padding-left:20px}
+.edit{background: url(/images/edit.png);background-repeat:no-repeat;padding-left:20px}
+.destroy{background: url(/images/destroy.png);background-repeat:no-repeat;padding-left:20px}
 
 /* ================================== */
 /* =            Banner              = */
@@ -39,12 +43,14 @@ textarea { font-size:14px; }
 .success, .error, .warning, .info { font-size:13px; text-align:center; margin: -10px 0 15px 0; padding: 8px 5px 8px 27px; background-position: 25px 9px }
 
 
-#wrap{padding-left: 20px;}
-#rodape{height:50px;margin-top:100px}
-#busca{padding:10px;background-color:blue}
-
 .warning, .notice, .error{padding:5px;border: 1px solid #CCC}
 .warning{}
 .notice{}
 .error{}
 .selected{background-color:blue;}
+
+
+/* =================================== */
+/*			          Busca			         = */
+/* =================================== */
+#box_search{padding:10px;background-color:#DDF;width:30%}

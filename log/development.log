@@ -12829,3 +12829,2453 @@ Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/2/edit]
   [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
   [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
   [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-08 22:55:50) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Rendered shared/_menu (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/2/edit]
+/!\ FAILSAFE /!\  Tue Jun 09 22:18:20 -0300 2009
+  Status: 500 Internal Server Error
+  Can't connect to MySQL server on 'localhost' (10061)
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `real_connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:576:in `connect'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:204:in `initialize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `new'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/mysql_adapter.rb:76:in `mysql_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    c:/ruby/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing MainController#index (for 127.0.0.1 at 2009-06-09 22:19:21) [GET]
+Rendering template within layouts/application
+Rendering main/index
+Completed in 31ms (View: 16, DB: 15) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 22:19:40) [GET]
+  [4;36;1mDestino Load (62.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 1875ms (View: 1781, DB: 78) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 22:19:42) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-09 22:19:45) [GET]
+  [4;36;1mUser Load (31.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 78ms (View: 0, DB: 31) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-09 22:19:46) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 22:19:46) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-09 22:19:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 22:19:49) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 22:19:56) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-09 22:20:03) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 22:20:04) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:27:34) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:27:47) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:28:49) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:28:56) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:35:39) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:39:27) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 203ms (View: 172, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:41:44) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:41:56) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:42:05) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:43:21) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:43:29) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:44:07) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:44:26) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:44:28) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:45:02) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:45:15) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:52:48) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:52:49) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 109ms (View: 93, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:53:05) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:53:05) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:53:06) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:53:06) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` ORDER BY nome[0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:56:35) [GET]
+  Parameters: {"busca"=>"t"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Load (47.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%t%') [0m
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 93ms (View: 31, DB: 47) | 200 OK [http://localhost/destinos/?busca=t]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:56:38) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:56:42) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:56:45) [GET]
+  Parameters: {"busca"=>"34"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%34%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=34]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:56:47) [GET]
+  Parameters: {"busca"=>"353"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%353%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=353]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:57:29) [GET]
+  Parameters: {"busca"=>"353"}
+Rendering template within layouts/application
+Rendering destinos/index
+ERROR: compiling _run_erb_app47views47destinos47index46html46erb RAISED compile error
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:27: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47destinos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id='box_search'>\n"
+@output_buffer.concat "\t<h4>Procurar Destinos</h4>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( form_tag "/destinos/#{@filter}", :method => :get ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( text_field_tag :busca, @busca ).to_s); @output_buffer.concat "<br/>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( submit_tag "Buscar", :name => "" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </form>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+ if @destinos.empty? ; @output_buffer.concat "\n"
+@output_buffer.concat "  <i>Nenhuma demanda.</i>\n"
+ else ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to "Adicionar novo destino de demandas", new_destino_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h4>Destinos Cadastrados</h4>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( flash[:message] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ for destino in @destinos ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( destino.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <span class='link_edit'>"; @output_buffer.concat(( link_to "editar destino", edit_destino_path(destino) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <span class='link_delete'>"; @output_buffer.concat(( link_to "excluir destino", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <br/>\n"
+ end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:27:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:27: syntax error, unexpected $end, expecting kEND) on line #25 of app/views/destinos/index.html.erb:
+22:   <span class='link_delete'><%= link_to "excluir destino", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete %>
+23:   <br/>
+24: <% end %>
+
+    app/views/destinos/index.html.erb:27:in `compile!'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:57:36) [GET]
+  Parameters: {"busca"=>"353"}
+Rendering template within layouts/application
+Rendering destinos/index
+ERROR: compiling _run_erb_app47views47destinos47index46html46erb RAISED compile error
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:27: syntax error, unexpected $end, expecting kEND
+Function body:           def _run_erb_app47views47destinos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id='box_search'>\n"
+@output_buffer.concat "\t<h4>Procurar Destinos</h4>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( form_tag "/destinos/#{@filter}", :method => :get ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( text_field_tag :busca, @busca ).to_s); @output_buffer.concat "<br/>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( submit_tag "Buscar", :name => "" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </form>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+ if @destinos.empty? ; @output_buffer.concat "\n"
+@output_buffer.concat "  <i>Nenhuma demanda.</i>\n"
+ else ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to "Adicionar novo destino de demandas", new_destino_path ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<h4>Destinos Cadastrados</h4>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( flash[:message] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+ for destino in @destinos ; @output_buffer.concat "\n"
+@output_buffer.concat "  "; @output_buffer.concat(( destino.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <span class='link_edit'>"; @output_buffer.concat(( link_to "editar destino", edit_destino_path(destino) ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <span class='link_delete'>"; @output_buffer.concat(( link_to "excluir destino", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  <br/>\n"
+ end ; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:27:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:25: syntax error, unexpected kENSURE, expecting kEND
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:27: syntax error, unexpected $end, expecting kEND) on line #25 of app/views/destinos/index.html.erb:
+22:   <span class='link_delete'><%= link_to "excluir destino", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete %>
+23:   <br/>
+24: <% end %>
+
+    app/views/destinos/index.html.erb:27:in `compile!'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:58:43) [GET]
+  Parameters: {"busca"=>"353"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%353%') [0m
+Completed in 62ms (View: 15, DB: 31) | 200 OK [http://localhost/destinos/?busca=353]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:58:44) [GET]
+  Parameters: {"busca"=>"353"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%353%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=353]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:58:48) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:58:52) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:58:57) [GET]
+  Parameters: {"busca"=>"s"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%s%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%s%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=s]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:02) [GET]
+  Parameters: {"busca"=>"s"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%s%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%s%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=s]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:23) [GET]
+  Parameters: {"busca"=>"s"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%s%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%s%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=s]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:25) [GET]
+  Parameters: {"busca"=>"s"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%s%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%s%') [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=s]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:28) [GET]
+  Parameters: {"busca"=>"r"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%r%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%r%') [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=r]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:30) [GET]
+  Parameters: {"busca"=>"ar"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%ar%') [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=ar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:42) [GET]
+  Parameters: {"busca"=>"ar"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%ar%') [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=ar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:46) [GET]
+  Parameters: {"busca"=>"ra"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%ra%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%ra%') [0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=ra]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-09 23:59:51) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 47ms (View: 32, DB: 0) | 200 OK [http://localhost/destinos/2/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-09 23:59:53) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mSQL (141.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+
+ActionView::TemplateError (undefined method `empty?' for #<Class:0xadf46d4>) on line #11 of app/views/destinos/index.html.erb:
+8:   </form>
+9: </div>
+10: 
+11: <% if @destinos.empty? %>
+12:   <i>Nenhum destino encontrado.</i>
+13: <% else %>
+14: <h4>Resultado da Busca</h4>
+
+    app/views/destinos/index.html.erb:11
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (234.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:00) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+
+ActionView::TemplateError (undefined method `empty?' for #<Class:0xae76508>) on line #11 of app/views/destinos/index.html.erb:
+8:   </form>
+9: </div>
+10: 
+11: <% if @destinos.empty? %>
+12:   <i>Nenhum destino encontrado.</i>
+13: <% else %>
+14: <h4>Resultado da Busca</h4>
+
+    app/views/destinos/index.html.erb:11
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:02) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+
+ActionView::TemplateError (undefined method `empty?' for #<Class:0xad4e860>) on line #11 of app/views/destinos/index.html.erb:
+8:   </form>
+9: </div>
+10: 
+11: <% if @destinos.empty? %>
+12:   <i>Nenhum destino encontrado.</i>
+13: <% else %>
+14: <h4>Resultado da Busca</h4>
+
+    app/views/destinos/index.html.erb:11
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (79.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:05) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+
+ActionView::TemplateError (undefined method `empty?' for #<Class:0xadded20>) on line #11 of app/views/destinos/index.html.erb:
+8:   </form>
+9: </div>
+10: 
+11: <% if @destinos.empty? %>
+12:   <i>Nenhum destino encontrado.</i>
+13: <% else %>
+14: <h4>Resultado da Busca</h4>
+
+    app/views/destinos/index.html.erb:11
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (344.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:27) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #11 of app/views/destinos/index.html.erb:
+8:   </form>
+9: </div>
+10: 
+11: <% if @destinos.empty? %>
+12:   <i>Nenhum destino encontrado.</i>
+13: <% else %>
+14: <h4>Resultado da Busca</h4>
+
+    app/views/destinos/index.html.erb:11
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:43) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:44) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:47) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:49) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:00:53) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:01:04) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:01:05) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:01:14) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:01:56) [GET]
+  Parameters: {"busca"=>"tes"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%tes%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=tes]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:01:58) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 00:03:04) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:03:04) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:04:07) [GET]
+  Parameters: {"busca"=>"faafs"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%faafs%') [0m
+Completed in 125ms (View: 109, DB: 0) | 200 OK [http://localhost/destinos/?busca=faafs&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:04:10) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:04:11) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:04:12) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:04:13) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:04:15) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (15.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:04:17) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 00:06:03) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:04) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:05) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 00:06:06) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:07) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:06:08) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:10) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:11) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:06:12) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:13) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:21) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:23) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 00:06:24) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-10 00:06:26) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Completed in 31ms (View: 15, DB: 15) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:27) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:28) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:30) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:32) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:35) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:06:38) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:19) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:21) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:21) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:27) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:28) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:28) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:28) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:29) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:08:30) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:31) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:08:36) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:08:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:13:45) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:13:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:13:45) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:13:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:13:46) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:13:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:14:54) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:14:56) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:14:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:14:59) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:19) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:20) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:21) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:21) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:21) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:28) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-10 00:15:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/add.png" with {:method=>:get}):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:15:32) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:56) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:57) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:58) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:58) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:58) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:58) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:16:59) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:17:05) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:17:31) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:17:42) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:00) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:01) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:02) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:02) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:14) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:15) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:16) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:25) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:26) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:26) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:26) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:26) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:26) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:27) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:30) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:18:31) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:19:17) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:19:43) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:19:54) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:10) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:10) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:20) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:25) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:20:29) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:40) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:47) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (16.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:48) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:56) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:20:57) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:20:59) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:02) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:04) [GET]
+  Parameters: {"busca"=>"w"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%w%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=w]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:05) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:21:08) [GET]
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:10) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:21:13) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 00:21:15) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "tipo"=>"", "email"=>""}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 93ms (View: 15, DB: 15) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:18) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 00:21:21) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:22) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 00:21:24) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:29) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:30) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:32) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:51) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:54) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:21:58) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:23:08) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:23:40) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:23:55) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 00:24:01) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/2/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:24:04) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:24:07) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=a]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 00:24:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/2/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 00:24:16) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]

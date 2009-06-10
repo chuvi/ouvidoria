@@ -4,7 +4,8 @@ class DestinosController < ApplicationController
   
   def index
     @menu = "destinos"
-    @destinos = Destino.all(:order => :nome)
+    @busca = params[:busca]
+    @destinos = @busca.blank? ? [] : Destino.search(@busca)  
   end
   
   def new

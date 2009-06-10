@@ -1,12 +1,25 @@
-<%= link_to "Adicionar novo destino de demandas", new_destino_path %>
+<%= link_to "Novo Destino", new_destino_path, :class => :new %>
 
-<h4>Destinos Cadastrados</h4>
+<div id='box_search'>
+	<h4>Procurar Destinos</h4>
+	<%= form_tag "/destinos/#{@filter}", :method => :get %>
+		<%= text_field_tag :busca, @busca %><br/>
+		<%= submit_tag "Buscar", :name => "" %>
+  </form>
+</div>
+
+<% if @destinos.empty? %>
+  <i>Nenhum destino encontrado.</i>
+<% else %>
+<h4>Resultado da Busca</h4>
+	<% for destino in @destinos %>
+	  <%= destino.nome %>
+	  <span class='link_edit'><%= link_to "editar", edit_destino_path(destino), :class => :edit %>
+	  <span class='link_delete'><%= link_to "excluir", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete , :class => :destroy%>
+	  <br/>
+	<% end %>
+<% end %>
+
 
 <%= flash[:message] %>
 
-<% for destino in @destinos %>
-  <%= destino.nome %>
-  <span class='link_edit'><%= link_to "editar destino", edit_destino_path(destino) %>
-  <span class='link_delete'><%= link_to "excluir destino", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete %>
-  <br/>
-<% end %>

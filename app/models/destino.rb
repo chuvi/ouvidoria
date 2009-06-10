@@ -5,4 +5,6 @@ class Destino < ActiveRecord::Base
   
   TIPOS = [:Funcionario, :Parlamentar, :Setor ]
   
+  named_scope :search, lambda { |text| {:conditions => ["nome LIKE ?", "%#{text}%"]} }
+  
 end
