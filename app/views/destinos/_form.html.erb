@@ -1,4 +1,13 @@
 <p><%= f.label :nome %><br/><%= f.text_field :nome %></p>
 <p><%= f.label :tipo %><br/><%= f.select :tipo, Destino::TIPOS, :include_blank => true %></p>
-<p><%= f.label :email %><br/><%= f.text_field :email %></p>  
+<p><%= f.label :emails %><br/><%= f.text_field :emails,  :title => "Podem ser digitados vários e-mails. Separe-os por ponto-e-vírgula." %></p>  
 <p><%= f.label :status %><br/><%= f.radio_button :status, :ativo%>Ativo<%= f.radio_button :status , :inativo %>Inativo</p>
+
+<script>
+jQuery('#destino_emails').bt({
+  trigger: ['focus', 'blur'],
+  positions: ['right'],
+  fill: '#DDF',
+  cssStyles: {color: '#183048', fontWeight: 'bold', width: 'auto'}
+});
+</script>

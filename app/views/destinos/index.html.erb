@@ -3,7 +3,7 @@
 <div id='box_search'>
 	<h4>Procurar Destinos</h4>
 	<%= form_tag "/destinos/#{@filter}", :method => :get %>
-		<%= text_field_tag :busca, @busca %><br/>
+		<%= text_field_tag :busca, @busca, :title => 'Digite qualquer parte do nome do destino' %><br/>
 		<%= submit_tag "Buscar", :name => "" %>
   </form>
 </div>
@@ -23,3 +23,11 @@
 
 <%= flash[:message] %>
 
+<script>
+jQuery('#busca').bt({
+  trigger: ['focus', 'blur'],
+  positions: ['right'],
+  fill: '#183048',
+  cssStyles: {color: 'white', fontWeight: 'bold', width: 'auto'}
+});
+</script>

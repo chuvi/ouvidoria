@@ -14,7 +14,7 @@ class InitialDb < ActiveRecord::Migration
   
     create_table :destinos do |t|
       t.string    :nome
-      t.string    :email
+      t.string    :emails
       t.string    :status     
       t.string    :tipo 
       t.timestamps    

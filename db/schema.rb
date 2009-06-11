@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20090601233841) do
 
   create_table "destinos", :force => true do |t|
     t.string   "nome"
-    t.string   "email"
+    t.string   "emails"
     t.string   "status"
     t.string   "tipo"
     t.datetime "created_at"
