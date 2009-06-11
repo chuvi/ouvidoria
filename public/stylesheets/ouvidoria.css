@@ -35,10 +35,10 @@ textarea { font-size:14px; }
 /*          Messages & Errors        = */
 /* =================================== */
 
-  .success {	border: 1px solid #9c9; background: #e2f9e3 url(/images/tick_solid.png) no-repeat top; color: #060 }
-  .error { border: 1px solid #c68484; background: #fcc url(/images/cross_solid.png) no-repeat top; color: #c00; }
-  .warning { border: 1px solid #efefaf; background: #ffffcf url(/images/error_solid.png) no-repeat top;	color: #8a8a30; }
-  .info {	border: 1px solid #82c2d4; background: #ebf5f8 url(/images/information_solid.png) no-repeat top; color: #229 }
+.success {	border: 1px solid #9c9; background: #e2f9e3 url(/images/tick_solid.png) no-repeat top; color: #060 }
+.error { border: 1px solid #c68484; background: #fcc url(/images/cross_solid.png) no-repeat top; color: #c00; }
+.warning { border: 1px solid #efefaf; background: #ffffcf url(/images/error_solid.png) no-repeat top;	color: #8a8a30; }
+.info {	border: 1px solid #82c2d4; background: #ebf5f8 url(/images/information_solid.png) no-repeat top; color: #229 }
 /* .notice, .error, .warning, .info { font-weight: bold;	margin: -10px 0 15px 0;	padding: 5px 5px 5px 27px; background-position: 5px 5px } */
 .success, .error, .warning, .info { font-size:13px; text-align:center; margin: -10px 0 15px 0; padding: 8px 5px 8px 27px; background-position: 25px 9px }
 
@@ -53,4 +53,4 @@ textarea { font-size:14px; }
 /* =================================== */
 /*			          Busca			         = */
 /* =================================== */
-#box_search{padding:10px;background-color:#DDF;width:30%}
+#box_search{padding:10px;background-color:#DDF;width:30%;margin-top:20px}

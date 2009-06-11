@@ -1,10 +1,12 @@
+<%= flash[:message] %>
+
 <%= link_to "Novo Destino", new_destino_path, :class => :new %>
 
 <div id='box_search'>
 	<h4>Procurar Destinos</h4>
 	<%= form_tag "/destinos/#{@filter}", :method => :get %>
 		<%= text_field_tag :busca, @busca, :title => 'Digite qualquer parte do nome do destino' %><br/>
-		<%= submit_tag "Buscar", :name => "" %>
+		<%= submit_tag "Buscar",:id => 'submit_button', :name => "" , :title => 'Para buscar todos os registros, deixe a caixa em branco'%>
   </form>
 </div>
 
@@ -20,9 +22,6 @@
 	<% end %>
 <% end %>
 
-
-<%= flash[:message] %>
-
 <script>
 jQuery('#busca').bt({
   trigger: ['focus', 'blur'],
@@ -30,4 +29,10 @@ jQuery('#busca').bt({
   fill: '#183048',
   cssStyles: {color: 'white', fontWeight: 'bold', width: 'auto'}
 });
+
+jQuery('#submit_button').bt({
+  fill: '#183048',
+  cssStyles: {color: 'white', fontWeight: 'bold', width: 'auto'}
+});
+
 </script>

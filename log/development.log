@@ -15936,3 +15936,2040 @@ Rendering template within layouts/application
 Rendering destinos/new
 Rendered destinos/_form (0.0ms)
 Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 22:34:52) [GET]
+
+NameError (uninitialized constant User::EmailAddress):
+  app/models/user.rb:13
+  app/controllers/users_controller.rb:9:in `index'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 22:36:05) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 63ms (View: 15, DB: 16) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-10 22:36:08) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (16.0ms)
+Completed in 110ms (View: 94, DB: 0) | 200 OK [http://localhost/users/new]
+/!\ FAILSAFE /!\  Wed Jun 10 22:36:08 -0300 2009
+  Status: 500 Internal Server Error
+  cannot remove Object::EmailAddress
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_const'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `instance_eval'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:236:in `clear'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:65:in `cleanup_application'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-10 22:49:10) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+
+TypeError (can't dup NilClass):
+  app/controllers/users_controller.rb:13:in `new'
+  app/controllers/users_controller.rb:13:in `new'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (16.0ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Wed Jun 10 22:49:10 -0300 2009
+  Status: 500 Internal Server Error
+  cannot remove Object::EmailAddress
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_const'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `instance_eval'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:236:in `clear'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:65:in `cleanup_application'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-10 22:49:12) [GET]
+
+TypeError (can't dup NilClass):
+  app/controllers/users_controller.rb:13:in `new'
+  app/controllers/users_controller.rb:13:in `new'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+/!\ FAILSAFE /!\  Wed Jun 10 22:49:12 -0300 2009
+  Status: 500 Internal Server Error
+  cannot remove Object::EmailAddress
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_const'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `instance_eval'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:236:in `clear'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:65:in `cleanup_application'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-10 22:50:27) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-10 22:50:29) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"Adicionar"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY '') LIMIT 1[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY '') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Completed in 125ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+/!\ FAILSAFE /!\  Wed Jun 10 22:50:29 -0300 2009
+  Status: 500 Internal Server Error
+  cannot remove Object::EmailAddress
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_const'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `instance_eval'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:603:in `remove_constant'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:450:in `remove_unloadable_constants!'
+    c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:236:in `clear'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:65:in `cleanup_application'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2009-06-10 22:53:47) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/users_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (141.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2009-06-10 22:53:52) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/users_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2009-06-10 22:55:08) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/users_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2009-06-10 22:55:10) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/users_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-10 22:55:59) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/users_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (125.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-10 22:56:01) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/users_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-10 22:56:08) [GET]
+
+NameError (uninitialized constant EmailAddress):
+  app/controllers/application_controller.rb:1
+  app/controllers/destinos_controller.rb:1
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (203.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 22:56:21) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 32ms (View: 32, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 22:56:23) [GET]
+
+SyntaxError (D:/workspace_rails/ouvidoria/app/models/user.rb:13: Invalid escape character syntax
+D:/workspace_rails/ouvidoria/app/models/user.rb:13: unterminated string meets end of file
+D:/workspace_rails/ouvidoria/app/models/user.rb:13: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+D:/workspace_rails/ouvidoria/app/models/user.rb:14: syntax error, unexpected '^', expecting ']'
+22(?:[^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(?:\x2e(?:[^\x00-\x20\x22\x2
+                                                                ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:15: syntax error, unexpected $undefined, expecting kEND
+8\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22(?:[^\x0d\x22\x5c\x80-\xf
+  ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:15: syntax error, unexpected '^', expecting ']'
+8\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22(?:[^\x0d\x22\x5c\x80-\xf
+                                                            ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:16: syntax error, unexpected ']', expecting kEND
+f]|\x5c[\x00-\x7f])*\x22))*\x40(?:[^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x
+  ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:16: syntax error, unexpected '^', expecting ']'
+f]|\x5c[\x00-\x7f])*\x22))*\x40(?:[^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x
+                                    ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:17: syntax error, unexpected $undefined, expecting kEND
+40\x5b-\x5d\x7f-\xff]+|\x5b(?:[^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(?
+   ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:17: syntax error, unexpected '^', expecting ']'
+40\x5b-\x5d\x7f-\xff]+|\x5b(?:[^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(?
+                                ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:18: syntax error, unexpected '^', expecting ']'
+:\x2e(?:[^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5
+          ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:19: syntax error, unexpected '^', expecting ']'
+b(?:[^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*\z/
+      ^):
+  app/controllers/users_controller.rb:9:in `index'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 22:56:25) [GET]
+
+SyntaxError (D:/workspace_rails/ouvidoria/app/models/user.rb:13: Invalid escape character syntax
+D:/workspace_rails/ouvidoria/app/models/user.rb:13: unterminated string meets end of file
+D:/workspace_rails/ouvidoria/app/models/user.rb:13: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+D:/workspace_rails/ouvidoria/app/models/user.rb:14: syntax error, unexpected '^', expecting ']'
+22(?:[^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(?:\x2e(?:[^\x00-\x20\x22\x2
+                                                                ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:15: syntax error, unexpected $undefined, expecting kEND
+8\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22(?:[^\x0d\x22\x5c\x80-\xf
+  ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:15: syntax error, unexpected '^', expecting ']'
+8\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22(?:[^\x0d\x22\x5c\x80-\xf
+                                                            ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:16: syntax error, unexpected ']', expecting kEND
+f]|\x5c[\x00-\x7f])*\x22))*\x40(?:[^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x
+  ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:16: syntax error, unexpected '^', expecting ']'
+f]|\x5c[\x00-\x7f])*\x22))*\x40(?:[^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x
+                                    ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:17: syntax error, unexpected $undefined, expecting kEND
+40\x5b-\x5d\x7f-\xff]+|\x5b(?:[^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(?
+   ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:17: syntax error, unexpected '^', expecting ']'
+40\x5b-\x5d\x7f-\xff]+|\x5b(?:[^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(?
+                                ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:18: syntax error, unexpected '^', expecting ']'
+:\x2e(?:[^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5
+          ^
+D:/workspace_rails/ouvidoria/app/models/user.rb:19: syntax error, unexpected '^', expecting ']'
+b(?:[^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*\z/
+      ^):
+  app/controllers/users_controller.rb:9:in `index'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 22:57:12) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-10 22:57:13) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (16.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-10 22:57:14) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>""}, "commit"=>"Adicionar"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY '') LIMIT 1[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY '') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-10 22:57:23) [POST]
+  Parameters: {"user"=>{"name"=>"", "password_confirmation"=>"", "password"=>"", "login"=>"", "email"=>"fasf"}, "commit"=>"Adicionar"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Exists (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`login` = BINARY '') LIMIT 1[0m
+  [4;35;1mUser Exists (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`email` = BINARY 'fasf') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (0.0ms)
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 22:57:37) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 22:57:38) [GET]
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (16.0ms)
+Completed in 32ms (View: 16, DB: 16) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 22:57:47) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"fda", "emails"=>"marcia;paulo@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+
+ActionView::TemplateError (translation data {:tipo=>"Tipo de Destino"} can not be used with :count => 1) on line #4 of app/views/destinos/new.html.erb:
+1: <h4>Novo Destino</h4>
+2: 
+3: <% form_for @destino do |f| %>  
+4:   <%= error_messages_for :destino %>
+5:   <%= render :partial => 'form', :locals => {:f => f} %>
+6:   <%= submit_tag  'Adicionar', :disable_with => 'Aguarde'%>  
+7:   <%= link_to "Cancelar", :action => "index" %>
+
+    app/views/destinos/new.html.erb:4
+    app/views/destinos/new.html.erb:3
+    app/controllers/destinos_controller.rb:22:in `create'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (266.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:00:02) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"fda", "emails"=>"marcia;paulo@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+
+ActionView::TemplateError (translation data {:tipo=>"Tipo de Destino"} can not be used with :count => 1) on line #4 of app/views/destinos/new.html.erb:
+1: <h4>Novo Destino</h4>
+2: 
+3: <% form_for @destino do |f| %>  
+4:   <%= error_messages_for :destino %>
+5:   <%= render :partial => 'form', :locals => {:f => f} %>
+6:   <%= submit_tag  'Adicionar', :disable_with => 'Aguarde'%>  
+7:   <%= link_to "Cancelar", :action => "index" %>
+
+    app/views/destinos/new.html.erb:4
+    app/views/destinos/new.html.erb:3
+    app/controllers/destinos_controller.rb:22:in `create'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (94.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:00:55) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"fda", "emails"=>"marcia;paulo@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:01:09) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "emails"=>"marcia;paulo@gmail.com", "tipo"=>""}}
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 94ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:01:14) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "emails"=>";paulo@gmail.com", "tipo"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:02:11) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"", "emails"=>";paulo@gmail.com", "tipo"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (15.0ms)
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:02:38) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de porto alegre", "emails"=>"marcia@camarapoa.rs.gov.br;hgtesta@gmail.com", "tipo"=>"Setor"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Create (0.0ms)[0m   [0mINSERT INTO `destinos` (`status`, `updated_at`, `nome`, `created_by`, `emails`, `updated_by`, `tipo`, `created_at`) VALUES('ativo', '2009-06-11 02:02:38', 'Camara municipal de porto alegre', NULL, 'marcia@camarapoa.rs.gov.br;hgtesta@gmail.com', NULL, 'Setor', '2009-06-11 02:02:38')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:02:38) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 23:03:58) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:04:05) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"ativo", "nome"=>"fa", "emails"=>"marcia@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Create (0.0ms)[0m   [0mINSERT INTO `destinos` (`status`, `updated_at`, `nome`, `created_by`, `emails`, `updated_by`, `tipo`, `created_at`) VALUES('ativo', '2009-06-11 02:04:05', 'fa', NULL, 'marcia@gmail.com', NULL, 'Funcionario', '2009-06-11 02:04:05')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:04:05) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:06:15) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 23:06:16) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:06:22) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"inativo", "nome"=>"fas", "emails"=>"marcia@gm.com", "tipo"=>"Parlamentar"}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDestino Create (15.0ms)[0m   [0;1mINSERT INTO `destinos` (`status`, `updated_at`, `nome`, `created_by`, `emails`, `updated_by`, `tipo`, `created_at`) VALUES('inativo', '2009-06-11 02:06:22', 'fas', NULL, 'marcia@gm.com', NULL, 'Parlamentar', '2009-06-11 02:06:22')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 15ms (DB: 15) | 302 Found [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:06:22) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 23:06:41) [GET]
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:06:49) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"nome"=>"fad", "emails"=>"fa@ga.ny", "tipo"=>"Funcionario"}}
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 16, DB: 15) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:06:54) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"ativo", "nome"=>"fad", "emails"=>"fa@ga.ny", "tipo"=>"Parlamentar"}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDestino Create (0.0ms)[0m   [0;1mINSERT INTO `destinos` (`status`, `updated_at`, `nome`, `created_by`, `emails`, `updated_by`, `tipo`, `created_at`) VALUES('ativo', '2009-06-11 02:06:54', 'fad', NULL, 'fa@ga.ny', NULL, 'Parlamentar', '2009-06-11 02:06:54')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 32ms (DB: 0) | 302 Found [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:06:54) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:08) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:12) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#destroy (for 127.0.0.1 at 2009-06-10 23:07:18) [DELETE]
+  Parameters: {"id"=>"2"}
+
+ActionView::MissingTemplate (Missing template destinos/destroy.erb in view path app/views):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#destroy (for 127.0.0.1 at 2009-06-10 23:07:23) [DELETE]
+  Parameters: {"id"=>"3"}
+
+ActionView::MissingTemplate (Missing template destinos/destroy.erb in view path app/views):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:24) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:25) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:33) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:35) [GET]
+  Parameters: {"busca"=>"as"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%as%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%as%') [0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos/?busca=as&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 23:07:38) [GET]
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 94ms (View: 79, DB: 15) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:40) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:42) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:44) [GET]
+  Parameters: {"busca"=>"as"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%as%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%as%') [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=as&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:07:48) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:07:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (15.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 16, DB: 15) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:08:03) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:08:05) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/3/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:08:08) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/4/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:08:09) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#destroy (for 127.0.0.1 at 2009-06-10 23:08:15) [DELETE]
+  Parameters: {"id"=>"3"}
+
+ActionView::MissingTemplate (Missing template destinos/destroy.erb in view path app/views):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#destroy (for 127.0.0.1 at 2009-06-10 23:10:26) [DELETE]
+  Parameters: {"id"=>"2"}
+
+SyntaxError (D:/workspace_rails/ouvidoria/app/controllers/destinos_controller.rb:57: syntax error, unexpected $end, expecting kEND):
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#destroy (for 127.0.0.1 at 2009-06-10 23:10:49) [DELETE]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Destroy (16.0ms)[0m   [0mDELETE FROM `destinos` WHERE `id` = 2[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 32ms (DB: 32) | 302 Found [http://localhost/destinos/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:10:49) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:10:53) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:10:57) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#destroy (for 127.0.0.1 at 2009-06-10 23:11:00) [DELETE]
+  Parameters: {"id"=>"3"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 3) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Destroy (0.0ms)[0m   [0mDELETE FROM `destinos` WHERE `id` = 3[0m
+  [4;36;1mSQL (15.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 15ms (DB: 15) | 302 Found [http://localhost/destinos/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:00) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:06) [GET]
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:15) [GET]
+  Parameters: {"busca"=>""}
+Rendering template within layouts/application
+Rendering destinos/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:34) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:36) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:40) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:11:41) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:42) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:53) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:56) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 94ms (View: 94, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:11:59) [GET]
+  Parameters: {"busca"=>"ad"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%ad%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%ad%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=ad&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:12:03) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:13:12) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+ERROR: compiling _run_erb_app47views47destinos47index46html46erb RAISED compile error
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+@output_buffer.concat "\t\t"; @output_buffer.concat(( submit_tag "Buscar",:id => 'submit_button', :name => "" , :title 'Para buscar todos, deixe a caixa em branco').to_s); @output_buffer.concat "\n"
+                                                                                                                        ^
+Function body:           def _run_erb_app47views47destinos47index46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat(( flash[:message] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat(( link_to "Novo Destino", new_destino_path, :class => :new ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<div id='box_search'>\n"
+@output_buffer.concat "\t<h4>Procurar Destinos</h4>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( form_tag "/destinos/#{@filter}", :method => :get ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( text_field_tag :busca, @busca, :title => 'Digite qualquer parte do nome do destino' ).to_s); @output_buffer.concat "<br/>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( submit_tag "Buscar",:id => 'submit_button', :name => "" , :title 'Para buscar todos, deixe a caixa em branco').to_s); @output_buffer.concat "\n"
+@output_buffer.concat "  </form>\n"
+@output_buffer.concat "</div>\n"
+@output_buffer.concat "\n"
+ if @destinos.empty? ; @output_buffer.concat "\n"
+@output_buffer.concat "  <i>Nenhum destino encontrado.</i>\n"
+ else ; @output_buffer.concat "\n"
+@output_buffer.concat "<h4>Resultado da Busca</h4>\n"
+@output_buffer.concat "\t";  for destino in @destinos ; @output_buffer.concat "\n"
+@output_buffer.concat "\t  "; @output_buffer.concat(( destino.nome ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t  <span class='link_edit'>"; @output_buffer.concat(( link_to "editar", edit_destino_path(destino), :class => :edit ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t  <span class='link_delete'>"; @output_buffer.concat(( link_to "excluir", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete , :class => :destroy).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t  <br/>\n"
+@output_buffer.concat "\t";  end ; @output_buffer.concat "\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<script>\n"
+@output_buffer.concat "jQuery('#busca').bt({\n"
+@output_buffer.concat "  trigger: ['focus', 'blur'],\n"
+@output_buffer.concat "  positions: ['right'],\n"
+@output_buffer.concat "  fill: '#183048',\n"
+@output_buffer.concat "  cssStyles: {color: 'white', fontWeight: 'bold', width: 'auto'}\n"
+@output_buffer.concat "});\n"
+@output_buffer.concat "</script>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:35:in `compile!'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+c:/ruby/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+c:/ruby/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+c:/ruby/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+c:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+D:/workspace_rails/ouvidoria/app/views/destinos/index.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting tASSOC
+@output_buffer.concat "\t\t"; @output_buffer.concat(( submit_tag "Buscar",:id => 'submit_button', :name => "" , :title 'Para buscar todos, deixe a caixa em branco').to_s); @output_buffer.concat "\n"
+                                                                                                                        ^) on line #9 of app/views/destinos/index.html.erb:
+6: 	<h4>Procurar Destinos</h4>
+7: 	<%= form_tag "/destinos/#{@filter}", :method => :get %>
+8: 		<%= text_field_tag :busca, @busca, :title => 'Digite qualquer parte do nome do destino' %><br/>
+9: 		<%= submit_tag "Buscar",:id => 'submit_button', :name => "" , :title 'Para buscar todos, deixe a caixa em branco'%>
+10:   </form>
+11: </div>
+12: 
+
+    app/views/destinos/index.html.erb:35:in `compile!'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (62.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:13:25) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 141ms (View: 109, DB: 16) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:13:41) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:13:43) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:13:46) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:13:48) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:16:34) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:17:03) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 32ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:17:46) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:17:59) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 15ms (View: 0, DB: 15) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:03) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:21) [GET]
+  Parameters: {"busca"=>""}
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:23) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:18:23) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:24) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 93ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:26) [GET]
+  Parameters: {"busca"=>"a"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%a%') [0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (nome LIKE '%a%') [0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/?busca=a&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:28) [GET]
+  Parameters: {"busca"=>"adfa"}
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `destinos` WHERE (nome LIKE '%adfa%') [0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=adfa&=Buscar]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:31) [GET]
+  Parameters: {"busca"=>""}
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/?busca=&=Buscar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#destroy (for 127.0.0.1 at 2009-06-10 23:18:39) [DELETE]
+  Parameters: {"id"=>"4"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 4) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDestino Destroy (0.0ms)[0m   [0;1mDELETE FROM `destinos` WHERE `id` = 4[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 15ms (DB: 0) | 302 Found [http://localhost/destinos/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:18:39) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:18:43) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-10 23:18:52) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de porto alegre", "emails"=>"", "tipo"=>""}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-10 23:18:55) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de porto alegre", "emails"=>"marcia@camarapoa.rs.gov.br;hgtesta@gmail.com", "tipo"=>""}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (16.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-10 23:18:58) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de porto alegre", "emails"=>"marcia@camarapoa.rs.gov.br;hgtesta@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDestino Update (0.0ms)[0m   [0;1mUPDATE `destinos` SET `tipo` = 'Funcionario', `updated_at` = '2009-06-11 02:18:58' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+
+NoMethodError (undefined method `notice_message' for #<DestinosController:0xacb92ec>):
+  app/controllers/destinos_controller.rb:35:in `update'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  c:/ruby/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  c:/ruby/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (265.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-10 23:19:22) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de porto alegre", "emails"=>"marcia@camarapoa.rs.gov.br;hgtesta@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/destinos/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:19:22) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:19:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-10 23:19:30) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de Porto alegre", "emails"=>"marcia@camarapoa.rs.gov.br;hgtesta@gmail.com", "tipo"=>""}}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#update (for 127.0.0.1 at 2009-06-10 23:19:33) [PUT]
+  Parameters: {"commit"=>"Alterar", "id"=>"1", "destino"=>{"status"=>"ativo", "nome"=>"Camara municipal de Porto alegre", "emails"=>"marcia@camarapoa.rs.gov.br;hgtesta@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mDestino Update (0.0ms)[0m   [0;1mUPDATE `destinos` SET `nome` = 'Camara municipal de Porto alegre', `updated_at` = '2009-06-11 02:19:33' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/destinos/1]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:19:33) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:19:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:20:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 109ms (View: 109, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:20:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:20:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:21:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:21:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (16.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:21:19) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:21:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (15.0ms)
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/1/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:21:25) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 23:21:26) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (15.0ms)
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:21:36) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"ativo", "nome"=>"verador alberto rooberto", "emails"=>"teste", "tipo"=>"Parlamentar"}}
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 32ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#create (for 127.0.0.1 at 2009-06-10 23:21:43) [POST]
+  Parameters: {"commit"=>"Adicionar", "destino"=>{"status"=>"ativo", "nome"=>"verador alberto rooberto", "emails"=>"teste@gmail.com", "tipo"=>"Funcionario"}}
+  [4;35;1mDestino Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDestino Create (0.0ms)[0m   [0mINSERT INTO `destinos` (`status`, `updated_at`, `nome`, `created_by`, `emails`, `updated_by`, `tipo`, `created_at`) VALUES('ativo', '2009-06-11 02:21:43', 'verador alberto rooberto', NULL, 'teste@gmail.com', NULL, 'Funcionario', '2009-06-11 02:21:43')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/destinos
+Completed in 15ms (DB: 15) | 302 Found [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:21:43) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:01) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#edit (for 127.0.0.1 at 2009-06-10 23:22:26) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` WHERE (`destinos`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering destinos/edit
+Rendered destinos/_form (16.0ms)
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos/5/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:32) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:22:38) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:38) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:22:40) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:41) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:22:45) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:46) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 23:22:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:48) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:22:51) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:52) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:22:55) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:56) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DemandasController#index (for 127.0.0.1 at 2009-06-10 23:22:58) [GET]
+Rendering template within layouts/application
+Rendering demandas/index
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/demandas]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:22:59) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-10 23:22:59) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` ORDER BY name[0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:23:00) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:23:45) [GET]
+  [4;36;1mDestino Load (0.0ms)[0m   [0;1mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#new (for 127.0.0.1 at 2009-06-10 23:23:54) [GET]
+  [4;35;1mDestino Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `destinos`[0m
+Rendering template within layouts/application
+Rendering destinos/new
+Rendered destinos/_form (0.0ms)
+Completed in 15ms (View: 0, DB: 0) | 200 OK [http://localhost/destinos/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DestinosController#index (for 127.0.0.1 at 2009-06-10 23:24:02) [GET]
+  [4;35;1mDestino Load (0.0ms)[0m   [0mSELECT * FROM `destinos` [0m
+Rendering template within layouts/application
+Rendering destinos/index
+  [4;36;1mDestino Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `destinos`[0m
+Completed in 15ms (View: 15, DB: 0) | 200 OK [http://localhost/destinos]

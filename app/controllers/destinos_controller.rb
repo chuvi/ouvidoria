@@ -5,7 +5,7 @@ class DestinosController < ApplicationController
   def index
     @menu = "destinos"
     @busca = params[:busca]
-    @destinos = @busca.blank? ? [] : Destino.search(@busca)  
+    @destinos = @busca.blank? ? Destino.all : Destino.search(@busca)  
   end
   
   def new
@@ -16,7 +16,7 @@ class DestinosController < ApplicationController
   def create
     @destino = Destino.new(params[:destino])
     if @destino.save
-      flash[:message] = notice_message 'Destino cadastrado com sucesso'
+      flash[:message] = success_message 'Destino cadastrado com sucesso'
       redirect_to destinos_path
     else      
       render :action => :new
@@ -32,7 +32,7 @@ class DestinosController < ApplicationController
   def update    
     @destino = Destino.find(params[:id])
     if @destino.update_attributes(params[:destino])
-      flash[:message] = notice_message 'Destino alterado  com sucesso'
+      flash[:message] = success_message 'Destino alterado  com sucesso'
       redirect_to destinos_path
     else
       flash[:message] = error_message 'Problemas ao editar destino'
@@ -41,6 +41,18 @@ class DestinosController < ApplicationController
   end
   
   def destroy
-  end
+  	@destino = Destino.find(params[:id])
+  	begin
+	  	if @destino.destroy
+	      flash[:message] = warning_message 'Destino excluído'	    
+	    else
+	      flash[:message] = error_message 'Problemas ao excluir destino'	      
+	    end
+	    redirect_to destinos_path
+ 		rescue Exception => e
+ 			flash[:message] = error_message "Problemas ao excluir destino (#{e})"
+ 			redirect_to destinos_path
+		end 
+	end		 	
   
 end

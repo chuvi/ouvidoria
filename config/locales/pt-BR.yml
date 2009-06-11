@@ -107,10 +107,7 @@ pt-BR:
     attributes:
       user:         
         name: "Nome"
-        password: "Senha" 
-      destino:
-        tipo: "Tipo de Destino"   
-            
+        password: "Senha"             
     errors:
       template:
         header:

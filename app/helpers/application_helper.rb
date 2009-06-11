@@ -5,8 +5,8 @@ module ApplicationHelper
     "<div class='warning'>#{message}</div>"
   end
   
-  def notice_message(message)
-    "<div class='notice'>#{message}</div>"
+  def success_message(message)
+    "<div class='success'>#{message}</div>"
   end
 
   def error_message(message)
