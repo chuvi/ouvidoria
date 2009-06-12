@@ -1,3 +1,19 @@
+<%= flash[:message] %>
 
+<%= link_to "Nova Demanda", new_demanda_path, :class => :new %>
 
-<h4>Nova Demanda</h4>
+<div id='box_search'>
+	<h4>Procurar Demandas</h4>
+	<%= form_tag '/demandas' , :method => :get %>	
+	  <p><span class='label'>Número</span><%= text_field_tag :numero %>	</p>
+		<p><span class='label'>Demandante</span><%= text_field_tag :demandante %>	</p>
+		<p><span  class='label'>Status</span><%= select_tag :status,options_for_select([[],[]]+Demanda::STATUS.collect{|s| [s[0], s[1]]}), :include_blank => true %>	</p>				
+		<%= submit_tag "Buscar",:id => 'submit_button', :name => "" %>
+  </form>
+</div>
+
+<% if @demandas.empty? %>
+  <i>Nenhuma demanda encontrada.</i>
+<% else %>
+<h4>Resultado da Busca</h4>
+<% end %>

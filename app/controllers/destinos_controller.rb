@@ -20,8 +20,7 @@ class DestinosController < ApplicationController
       redirect_to destinos_path
     else      
       render :action => :new
-    end
-    
+    end    
   end
   
   def edit

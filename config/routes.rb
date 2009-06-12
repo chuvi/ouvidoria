@@ -24,7 +24,8 @@ ActionController::Routing::Routes.draw do |map|
   #   map.resources :products do |products|
   #     products.resources :comments
   #     products.resources :sales, :collection => { :recent => :get }
-  #   end 
+  #   end   
+  
   
   map.resources	:sessions
   map.resources	:users

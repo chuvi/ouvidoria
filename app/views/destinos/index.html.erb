@@ -14,12 +14,15 @@
   <i>Nenhum destino encontrado.</i>
 <% else %>
 <h4>Resultado da Busca</h4>
+	<table id='resultado_busca'>
 	<% for destino in @destinos %>
-	  <%= destino.nome %>
-	  <span class='link_edit'><%= link_to "editar", edit_destino_path(destino), :class => :edit %>
-	  <span class='link_delete'><%= link_to "excluir", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete , :class => :destroy%>
-	  <br/>
+		<tr class="<%= cycle('line_even','line_odd')%>">
+	  <td><%= destino.nome %></td>
+	  <td><span class='link_edit'><%= link_to "editar", edit_destino_path(destino), :class => :edit %></td>
+	  <td><span class='link_delete'><%= link_to "excluir", {:action => :destroy, :id => destino.id}, :confirm => 'Tem certeza de que deseja excluir o destino?', :method => :delete , :class => :destroy%></td>
+	  </tr>
 	<% end %>
+	</table>
 <% end %>
 
 <script>
