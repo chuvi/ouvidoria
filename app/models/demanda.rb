@@ -10,7 +10,7 @@ class Demanda < ActiveRecord::Base
 	before_create Proc.new{|record| record.status = 'pendente'}	
 	
 	named_scope	:limit, lambda { |num| { :limit => num } }
-	named_scope	:last_week, :conditions => ["created_at > ?", 1.week.ago], :order => 'created_at DESC'
+	named_scope	:last_week, :conditions => ["created_at > ?", 1.week.ago], :order => 'created_at desc'
 	named_scope	:nova, :conditions => {:status => 'nova'}
 	named_scope	:em_atendimento, :conditions => {:status => 'em_atendimento'}
 
