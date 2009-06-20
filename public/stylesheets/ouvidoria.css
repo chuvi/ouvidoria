@@ -59,4 +59,4 @@ textarea { font-size:14px; }
 	#resultado_busca td{padding:8px;}
 .line_even{background-color:#DDF;}
 .line_odd{background-color:white;}
-.label{width:80px }
+.label{width:80px;float:left; }
