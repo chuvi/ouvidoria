@@ -3,17 +3,15 @@ class DemandasController < ApplicationController
 	include ApplicationHelper
   
   def index
-  	y params
     @menu = "demandas"        
+    @demandas_ultima_semana = @demandas = Demanda.last_week
     if !params[:filtro]
-    	@demandas = Demanda.last_week
+    	@demandas = []
   	elsif params[:filtro] == 'novas'
   		@demandas = Demanda.novas 
   	elsif params[:filtro] == 'em_atendimento'
   		@demandas = Demanda.em_atendimento 
-  	end    
-    
-    y @demandas
+  	end     
     
 =begin    
     @demandas = []

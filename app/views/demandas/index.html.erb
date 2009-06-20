@@ -14,7 +14,7 @@
 
 
 <h4>Demandas da última semana</h4>
-<% if @demandas.empty? %>
+<% if @demandas_ultima_semana.empty? %>
   <i>Nenhuma demanda encontrada.</i>
 <% else %>
 <table id='resultado_busca'>
@@ -22,7 +22,7 @@
 	<th>Demandante</th>
 	<th>Demanda</th>
 	<th>Data Registro</th>
-<% for demanda in @demandas %>
+<% for demanda in @demandas_ultima_semana %>
 	<tr class="<%= demanda.status %>">
   <td><%= demanda.id %></td>
   <td><%= demanda.demandante %></td>
