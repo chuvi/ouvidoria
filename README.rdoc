@@ -1,6 +1,8 @@
 Instalação do ambiente
-==
+======================
+
 No Windows XP
+-------------
 
 - Instalação do Ruby (Final release - 1.8.6.26)
   - download do windows installer em http://rubyonrails.org/download
@@ -21,7 +23,8 @@ No Windows XP
   - execute. Caso apareça alguma mensagem de erro, feche as janelas, execute o instalador novamente, selecionado a opção "Repair". Verifique se o serviço está rodando (services.msc no prompt)
 
 Instalação da Aplicação
-==
+=======================
+
 A aplicação pode ser obtida de pelo menos duas formas: via git clone (se você não conhece git, é hora de conhecer) ou por download do Github, aqui mesmo onde você está. Uma vez em sua máquina, é necessário configurar o acesso ao banco de dados. Vários bancos podem ser utilizados, entre eles MySQl, PostgreSQL, Sql Server e DB2. 
 
 - Instalação de adapter e configuração da aplicação
