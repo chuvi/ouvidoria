@@ -12,10 +12,11 @@
   </form>
 </div>
 
+
+<h4>Demandas da última semana</h4>
 <% if @demandas.empty? %>
   <i>Nenhuma demanda encontrada.</i>
 <% else %>
-<h4>Resultado da Busca</h4>
 <table id='resultado_busca'>
 	<th>Nº</th>
 	<th>Demandante</th>
@@ -31,3 +32,13 @@
 <% end %>
 </table>
 <% end %>
+
+
+<h4>Filtros</h4>
+
+<ul>
+	<li><%= link_to "Visualizar demandas em atendimento", :action => "index", :filtro => 'em_atendimento' %></li>
+	<li><%= link_to "Efetuar busca avançada", :action => "index", :filtro => 'busca_avancada' %></li>
+</ul>
+
+

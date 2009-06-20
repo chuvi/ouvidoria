@@ -8,11 +8,16 @@ class Demanda < ActiveRecord::Base
 		:allow_blank => true
 	
 	before_create Proc.new{|record| record.status = 'pendente'}	
+	
+	named_scope	:limit, lambda { |num| { :limit => num } }
+	named_scope	:last_week, :conditions => ["created_at > ?", 1.week.ago]
+	named_scope	:nova, :conditions => {:status => 'nova'}
+	named_scope	:em_atendimento, :conditions => {:status => 'em_atendimento'}
 
 	
 	STATUS = [['Em Atendimento',:em_atendimento],
 	  ['Finalizada Sem Solução',:finalizada_sem_solucao],		
-		['Pendente',:pendente],		
+		['Nova',:nova],		
 		['Resolvida',:resolvida]]
 		
 	def validate
