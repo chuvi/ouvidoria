@@ -13,11 +13,13 @@ ActiveRecord::Schema.define(:version => 20090601233841) do
 
   create_table "demandas", :force => true do |t|
     t.string   "demandante"
+    t.string   "descricao"
     t.string   "email"
     t.string   "endereco"
     t.string   "telefone"
     t.string   "celular"
     t.string   "status"
+    t.string   "destino_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "created_by"

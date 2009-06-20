@@ -6,7 +6,7 @@ class DemandasController < ApplicationController
     @menu = "demandas"        
     @demandas = []
     if params[:status]    
-    	demandas = Demanda.search(params)
+    	@demandas = Demanda.search(params)
     end
     
   end
@@ -14,6 +14,7 @@ class DemandasController < ApplicationController
   def new
   	@menu = "demandas"
   	@demanda = Demanda.new
+  	@destinos = Destino.all
   end  
   
   def create
@@ -21,7 +22,8 @@ class DemandasController < ApplicationController
     if @demanda.save
       flash[:message] = success_message 'Demanda cadastrada com sucesso'
       redirect_to demandas_path
-    else      
+    else    
+    	@destinos = Destino.all  
       render :action => :new
     end    
   end

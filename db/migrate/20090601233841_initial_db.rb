@@ -24,11 +24,13 @@ class InitialDb < ActiveRecord::Migration
   
     create_table  :demandas do |t|
       t.string  :demandante
+      t.string	:descricao
       t.string  :email
       t.string  :endereco
       t.string  :telefone
       t.string  :celular
       t.string  :status
+      t.string	:destino_id
       t.timestamps       
       t.integer :created_by      
       t.integer :updated_by

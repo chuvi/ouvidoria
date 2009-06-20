@@ -6,7 +6,7 @@
 	<h4>Procurar Destinos</h4>
 	<%= form_tag "/destinos/#{@filter}", :method => :get %>
 		<%= text_field_tag :busca, @busca, :title => 'Digite qualquer parte do nome do destino' %><br/>
-		<%= submit_tag "Buscar",:id => 'submit_button', :name => "" , :title => 'Para buscar todos os registros, deixe a caixa em branco'%>
+		<%= submit_tag "Buscar",:id => 'submit_button', :name => "" , :title => 'Para buscar todos os registros, deixe a caixa de busca em branco'%>
   </form>
 </div>
 
@@ -25,17 +25,22 @@
 	</table>
 <% end %>
 
-<script>
-jQuery('#busca').bt({
-  trigger: ['focus', 'blur'],
-  positions: ['right'],
-  fill: '#183048',
-  cssStyles: {color: 'white', fontWeight: 'bold', width: 'auto'}
+<script language='javascript'>
+$(document).ready(function() {
+jQuery('#busca').tooltip({ 
+    track: true, 
+    delay: 0, 
+    showURL: false, 
+    showBody: " - ", 
+    fade: 250 
 });
 
-jQuery('#submit_button').bt({
-  fill: '#183048',
-  cssStyles: {color: 'white', fontWeight: 'bold', width: 'auto'}
+jQuery('#submit_button').tooltip({ 
+    track: true, 
+    delay: 0, 
+    showURL: false, 
+    showBody: " - ", 
+    fade: 250 
 });
-
+})
 </script>
